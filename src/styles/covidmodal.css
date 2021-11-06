@@ -1,0 +1,81 @@
+.CovidUpdatesModalText{
+    background: #530001;
+              height: 50%;
+            
+              width: 50%;
+              color: white;
+
+              opacity: 1;
+              font-size: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              padding:0 80px;
+              line-height:30px;
+              position:relative;
+            
+           
+}
+
+
+.modalDivWrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+ 
+    align-items: center;
+    opacity: 1!important;
+
+}
+
+
+
+@media screen and (max-width:880px) {
+    .CovidUpdatesModalText{
+   
+                 
+                  width: 70%;
+               
+    
+                  
+             
+                  text-align: center;
+                  padding:0 30px;
+               
+               
+    }
+}
+
+@media screen and (max-width:540px) {
+    .CovidUpdatesModalText{
+   
+                 
+                  width: 100%;
+               
+    
+                  
+             
+                  text-align: center;
+                  padding:0 10px;
+               
+               
+    }
+}
+
+@media screen and (max-width:575px) {
+    .CovidUpdatesModalText{
+       
+                  height: 50%;
+                  width: 100%;
+               
+    
+                  font-size: 14px;
+             
+                  text-align: center;
+                  padding:0 20px;
+               
+               
+    }
+}

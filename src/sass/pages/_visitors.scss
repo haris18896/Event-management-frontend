@@ -1,0 +1,416 @@
+.buy-tickets {
+  margin-bottom: 24.4rem;
+  @include breakpoint-up(large) {
+    margin-bottom: 7rem;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__image {
+    margin-bottom: -0.3rem;
+    min-height: 25rem;
+    height: fit-content;
+
+    & img {
+      margin-bottom: -0.3rem;
+      width: 100%;
+      @include breakpoint-up(large) {
+        width: auto;
+        // background-size: cover;
+      }
+    }
+
+    @include breakpoint-down(large) {
+      // background-size: cover;
+    }
+
+    @include breakpoint-down(small) {
+      // background-size: contain;
+    }
+  }
+
+  &__skeleton{
+    background-color: blue;
+  }
+
+  &__text {
+    position: absolute;
+    left: 50%;
+    bottom: -20rem;
+    //bottom: 0;
+    width: 90%;
+    transform: translateX(-50%);
+    padding: 3rem 3.5rem;
+    color: white;
+    opacity: 0.9;
+    font-family: 'Alegreya', serif;
+    text-align: center;
+        @include breakpoint-up(large){
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: auto;
+      min-height: fit-content;
+      text-align: left;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+}
+  }
+
+  &__top {
+    margin-bottom: 0.8rem;
+  }
+
+  &__header {
+    font-size: 1.4rem !important;
+    font-weight: 500;
+
+    @include breakpoint-up(large) {
+      font-size: 2rem !important;
+    }
+  }
+
+  &__mid {
+    font-size: 1.4rem !important;
+    margin-bottom: 3.5rem;
+    line-height: 1.9rem;
+
+    @include breakpoint-up(large) {
+      font-size: 2rem !important;
+      line-height: 2.5rem;
+    }
+  }
+
+  &__bottom {
+    margin-bottom: 1rem;
+  }
+}
+
+.discover {
+  margin-bottom: 5.9rem;
+
+  @include breakpoint-up(large) {
+    display: block;
+  }
+
+  &__left {
+    position: relative;
+    flex: 35%;
+    height: fit-content;
+
+    &__vertical {
+      position: absolute;
+      bottom: 0;
+      left: 11rem;
+      transform: translateX(-28%);
+      width: 2px;
+      height: 87% !important;
+      background-color: white;
+    }
+
+    &__horizontal {
+      position: absolute;
+      top: 16% !important;
+      right: 0;
+      height: 2px;
+      width: calc(100% - 5rem);
+      // background-color: yellow;
+    }
+  }
+
+  &__right {
+    position: relative;
+    flex: 55% !important;
+    padding-left: 2rem;
+  }
+
+  &__gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__top {
+      align-self: flex-start;
+      z-index: 3;
+    }
+
+    &__bottom {
+      z-index: 2;
+      margin-top: -2rem;
+    }
+  }
+
+  &__left-mid {
+    position: relative;
+    // font-size: 2rem;
+
+    &__text {
+      color: #ffffff;
+      font-weight: 500 !important;
+      font-family: 'Alegreya', serif;
+      // background-color: red;
+      width: 100%;
+    }
+
+    &__top {
+      margin-bottom: 2.5rem;
+      // background: red;
+      font-size: 2rem;
+    }
+    
+    &__mid {
+      margin-bottom: 2.5rem;
+      font-size: 2rem;
+
+      &--welcome{
+        // background: red;
+        width: fit-content;
+        margin-left: 15rem;
+        margin-top: 8rem;
+      }
+    }
+
+    &__icon {
+      margin-right: 3.5rem;
+    }
+
+  }
+
+  &__plus-divider {
+    position: absolute;
+  }
+
+  &__heading {
+    font-family: 'Alegreya', serif;
+    font-size: 4rem;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+    margin-bottom: 3.5rem;
+  }
+}
+
+.discover-mob {
+  margin-bottom: 3.8rem;
+  @include breakpoint-up(large) {
+    display: none;
+  }
+
+  &__top {
+    margin-bottom: 2rem;
+    & img {
+      width: 100%;
+      margin-bottom: -0.3rem;
+    }
+  }
+
+  &__bottom {
+    & img {
+      width: 100%;
+      margin-bottom: -0.3rem;
+    }
+  }
+
+  &__mid {
+    position: relative;
+    // padding: 0 2rem;
+    // background-color:red;
+
+    &__vertical {
+      position: absolute;
+      bottom: 0;
+      left: 4rem;
+      width: 2px;
+      height: 85%;
+      background-color: white;
+    }
+
+    &__horizontal {
+      position: absolute;
+      top: 20%;
+      left: 2rem;
+      height: 2px;
+      width: calc(100% - 4rem);
+      background-color: white;
+    }
+  }
+
+  &__heading {
+    font-family: 'Alegreya', serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+    margin-bottom: 3.5rem;
+    padding-left: 2rem;
+  }
+
+  &__text {
+    font-size: 1.4rem !important;
+    color: #ffffff;
+    font-weight: 400 !important;
+    font-family: 'Alegreya', serif;
+    letter-spacing: 0.2px;
+    margin-bottom: 3.3rem;
+    padding-left: 6rem;
+    padding-top: 1.2rem;
+    width: 85%;
+
+    &__top {
+      margin-bottom: 3rem;
+    }
+
+    &__mid {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.feature {
+  padding: 0 2rem;
+  margin-bottom: 2.8rem;
+
+  @include breakpoint-up(large) {
+    margin-bottom: 5.8rem;
+    padding: 0;
+  }
+
+  &-hr {
+    margin-bottom: 1.5rem;
+    @include breakpoint-up(large) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__heading {
+    font-family: 'Alegreya', serif;
+    font-size: 2rem !important;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+    margin-bottom: 1rem;
+
+    @include breakpoint-up(large) {
+      font-size: 4rem !important;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Alegreya', serif;
+    margin-bottom: 2rem;
+    @include breakpoint-up(large) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.plan {
+  margin-bottom: 2.8rem;
+  padding: 0 2rem;
+
+  @include breakpoint-up(large) {
+    margin-bottom: 5.8rem;
+    padding: 0;
+  }
+
+  &-hr {
+    margin-bottom: 1.5rem;
+
+    @include breakpoint-up(large) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__heading {
+    font-family: 'Alegreya', serif;
+    font-size: 2rem !important;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+    margin-bottom: 1rem;
+
+    @include breakpoint-up(large) {
+      font-size: 4rem !important;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Alegreya', serif;
+    margin-bottom: 2rem;
+
+    @include breakpoint-up(large) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.sponsors {
+  // margin-bottom: 6rem;
+  // padding: 0 2rem;
+  &-hr {
+    margin-bottom: 1.5rem;
+
+    @include breakpoint-up(large) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  @include breakpoint-up(large) {
+    padding: 0;
+  }
+
+  &__heading {
+    font-family: 'Alegreya', serif;
+    font-size: 2rem !important;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+    margin-bottom: 3rem;
+
+    @include breakpoint-up(large) {
+      font-size: 4rem !important;
+      margin-bottom: 3rem;
+    }
+    // margin-bottom: 0.5rem;
+  }
+
+  &__paragraph {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Alegreya', serif;
+    margin-bottom: 2rem;
+
+    @include breakpoint-up(large) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin-bottom: 3rem;
+    // flex-wrap: wrap;
+    margin-bottom: 6rem;
+    // height: 10rem;
+  }
+
+  &__logo {
+    width: 20rem;
+    margin: 0 5rem;
+    & img {
+      width: 100%;
+    }
+  }
+}
