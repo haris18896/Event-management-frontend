@@ -5,7 +5,6 @@ import UpdatedBuisnessOne from '../../assets/images/composed/house.webp'
 import Skeleton from '@mui/material/Skeleton'
 import ReactHtmlParser from 'react-html-parser'
 import { Link } from 'react-router-dom';
-import PDF from '../../assets/download/Sponsorpakketten_2021.pdf'
 
 const BrochureTextSkeleton = () => {
 
@@ -58,16 +57,16 @@ const Brochure = () => {
               <div className='business-tickets__bottom'>
                 <div className='visitors-btn'>
                   <p className='visitors-btn__text'>
-                    <a
+                    <Link
                     className="visitors-btn--downloadLink"
-                    href="https://storage.googleapis.com/events-registration-website.appspot.com/website/Sponsorpakketten%202021%20Magisch%20Maastricht%20Vrijthof.pdf"
+                    to="https://storage.googleapis.com/events-registration-website.appspot.com/website/Sponsorpakketten%202021%20Magisch%20Maastricht%20Vrijthof.pdf"
                     download
                     target="_blank"
                     >
                     {language === 'en' ? 'Download the Brochure / Sponsor Packages' : language === 'nl' ? 'Download de Brochure / Sponsorpakketten' : 'Laden Sie die Broschüre / Sponsorenpakete herunter'}
 
                       
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </div>
